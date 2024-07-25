@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/cicbgrnd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/iv_back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:contentDescription="Back"
+            android:focusable="true"
+            android:src="@drawable/arrow_back_24" />
+
+        <!-- Spacer to Center the Title -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <!-- Insurance Claim Form Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insurance Claim Form"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp" />
+        <!-- Documentation Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Documentation"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Attachments: Birth Certificate -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Attachments:"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnUploadBirthCertificate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Birth Certificate"/>
+
+        <TextView
+            android:id="@+id/tvBirthCertificate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No file selected"/>
+
+        <!-- Attachments: Death Certificate -->
+        <Button
+            android:id="@+id/btnUploadDeathCertificate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Death Certificate (PDF only)"/>
+
+        <TextView
+            android:id="@+id/tvDeathCertificate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No file selected"/>
+
+        <!-- Photographs Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Photographs:"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"/>
+
+        <!-- Photographs: Accident Proof -->
+        <Button
+            android:id="@+id/btnUploadAccidentProof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Accident Proof (JPEG/JPG/PNG only)"/>
+
+        <TextView
+            android:id="@+id/tvAccidentProof"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No file selected"/>
+
+        <!-- Photographs: Disability Proof -->
+        <Button
+            android:id="@+id/btnUploadDisabilityProof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Disability Proof (JPEG/JPG/PNG only)"/>
+
+        <TextView
+            android:id="@+id/tvDisabilityProof"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No file selected"/>
+
+        <!-- Authorization and Signature Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Authorization and Signature"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <!-- Authorization Checkbox -->
+        <CheckBox
+            android:id="@+id/cbAuthorization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="I hereby certify that the information provided is true and accurate." />
+
+        <!-- Signature -->
+
+
+        <!-- Date of Certification -->
+        <EditText
+            android:id="@+id/etDateOfCertification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Certification (DD/MM/YYYY)"
+            android:inputType="date"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rounded_button"/>
+        <Button
+            android:id="@+id/btnClaim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Download Claim Form"
+            android:textColor="@color/white"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/rounded_button"/>
+    </LinearLayout>
+</ScrollView>

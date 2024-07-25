@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "471462017642",
+    "project_id": "coverme-c103c",
+    "storage_bucket": "coverme-c103c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471462017642:android:3ae9faa8277876af646813",
+        "android_client_info": {
+          "package_name": "com.example.coverme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByptM5spJXV6yuP_MmlbFSnggZSbmc7Xs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name ="maroon">#800000</color>
+    <color name ="button_background">#800000</color>
+    <color name ="yellow">#FFFF00</color>
+    <color name ="colourless">#00FFFFFF</color>
+    <color name ="brown">#964B00</color>
+    <color name="night_mode">#800000</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="privacy_account">#964B00</color>
+    <color name ="account">#800080</color>
+    <color name ="dark_yellow">#8B8000</color>
+    <color name ="mustard_yellow">#e1ad01</color>
+
+</resources>

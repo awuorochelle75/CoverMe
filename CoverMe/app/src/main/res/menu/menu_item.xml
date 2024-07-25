@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    app:showAsAction="always"
+    android:title="@string/tyy"
+    android:icon="@drawable/menu_24">
+
+    <menu>
+
+        <item
+            android:id="@+id/contact_info"
+            android:title="@string/contactinfo2"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/terms_privacy_policy"
+            android:title="@string/terms_amp_privacy_policy7"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/logout"
+            android:title="@string/jnbhh"
+            app:showAsAction="never"/>
+
+
+
+
+    </menu>
+
+
+
+</item>
+
+</menu>

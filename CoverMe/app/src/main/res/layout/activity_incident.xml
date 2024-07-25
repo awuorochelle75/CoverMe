@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/cicbgrnd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/iv_back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:contentDescription="Back"
+            android:focusable="true"
+            android:src="@drawable/arrow_back_24"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Spacer to Center the Title -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <!-- Insurance Claim Form Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insurance Claim Form"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp" />
+
+        <!-- Incident Details Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Incident Details"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Date of Incident -->
+        <EditText
+            android:id="@+id/etDateOfIncident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Incident (DD/MM/YYYY)"
+            android:inputType="date"
+            android:layout_marginTop="16dp"
+            android:minHeight="48dp" />
+
+        <!-- Location of Incident -->
+        <EditText
+            android:id="@+id/etLocationOfIncident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location of Incident"
+            android:inputType="text"
+            android:layout_marginTop="16dp"
+            android:minHeight="48dp" />
+
+        <!-- Detailed Description of Incident -->
+        <EditText
+            android:id="@+id/etDescriptionOfIncident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Detailed Description of Incident"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Witness Information Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Witness Information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Witness Statements -->
+        <EditText
+            android:id="@+id/etWitnessStatements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Witness Statements"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Witness Contact Information -->
+        <EditText
+            android:id="@+id/etWitnessContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Witness Contact Information"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:layout_marginTop="16dp"/>
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="40dp"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:onClick="onContinueClicked"
+            android:background="@drawable/rounded_button"/>
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

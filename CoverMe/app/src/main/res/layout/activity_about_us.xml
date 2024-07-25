@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Your layout for About Us activity goes here -->
+    <ImageView
+        android:id="@+id/about_us_image"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/about"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/about_us_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About CIC Academia"
+        android:textColor="@color/maroon"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:layout_below="@+id/about_us_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/about_us_description1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CIC Academia is dedicated to providing comprehensive insurance solutions for children aged 2 to 13 years. Our mission is to safeguard the well-being and future of every child by offering tailor-made insurance plans that meet the diverse needs of families."
+        android:layout_below="@id/about_us_text"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/about_us_description2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="With a focus on education, CIC Academia ensures that children have access to quality education without financial constraints. Our innovative insurance products cover a range of benefits, including tuition fees coverage, medical expenses to the parent incase of accident, and more."
+        android:layout_below="@id/about_us_description1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/about_us_description3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="As a trusted insurance provider, CIC Academia prioritizes transparency, reliability, and customer satisfaction. We believe in building lasting relationships with our clients and strive to exceed their expectations through personalized service and prompt claims settlement."
+        android:layout_below="@id/about_us_description2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"/>
+    <ImageView
+        android:id="@+id/cichigh"
+        android:layout_width="1000dp"
+        android:layout_height="210dp"
+        android:src="@drawable/cichigh"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/about_us_description3"
+        android:layout_marginTop="40dp" />
+</RelativeLayout>

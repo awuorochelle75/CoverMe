@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/mustard_yellow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Terms of Service -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terms of Service"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/maroon"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Introduction\n\nWelcome to CIC Insurance Company. By accessing or using our services, you agree to be bound by these Terms of Service."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Services\n\nCIC Insurance Company offers a variety of insurance products and services. Specific terms and conditions may apply to each product or service."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. User Responsibilities\n\nUsers are responsible for providing accurate information and for maintaining the confidentiality of their account information."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Limitations of Liability\n\nCIC Insurance Company will not be liable for any indirect, incidental, or consequential damages arising out of the use of our services."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. Governing Law\n\nThese Terms of Service shall be governed by and construed in accordance with the laws of [Your Jurisdiction]."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Privacy Policy -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/maroon"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Introduction\n\nCIC Insurance Company is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and disclose your personal information."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Information Collection\n\nWe collect personal information that you provide to us, such as your name, contact details, and payment information. We may also collect information about your use of our services."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Use of Information\n\nWe use your personal information to provide and improve our services, to communicate with you, and for billing purposes."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Disclosure of Information\n\nWe may share your information with third parties to the extent necessary to provide our services, comply with legal obligations, or protect our rights."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. Security\n\nWe implement appropriate security measures to protect your personal information from unauthorized access and disclosure."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6. Changes to This Policy\n\nWe may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on our website."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7. Contact Us\n\nIf you have any questions about this Privacy Policy, please contact us at [Contact Information]."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

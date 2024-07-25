@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mustard_yellow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CIC LIFE ASSURANCE LTD. \n Declaration Form"
+            android:textStyle="bold"
+            android:textColor="@color/maroon"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"/>
+
+
+
+
+        <!-- Health Questions -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I. Health Questions (ANY MIS-STATEMENT WILL RENDER THE POLICY VOID)"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Question a -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a. Height: Feet"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/edit_height_feet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Feet"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inches"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/edit_height_inches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Inches"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight: Kilograms"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/edit_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Kilograms"/>
+
+        <!-- Question b -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b. Any disorder or disease affecting any system?"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+        <RadioGroup
+            android:id="@+id/radio_group_disorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_disorder_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"/>
+            <RadioButton
+                android:id="@+id/radio_disorder_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+        </RadioGroup>
+
+        <!-- Question c -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c. Alcohol and/or smoking?"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+        <RadioGroup
+            android:id="@+id/radio_group_alcohol_smoking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_alcohol_smoking_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"/>
+            <RadioButton
+                android:id="@+id/radio_alcohol_smoking_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+        </RadioGroup>
+
+        <!-- Question d -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="d. Any illness, accident, or disease in the last 5 years?"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+        <RadioGroup
+            android:id="@+id/radio_group_illness_accident"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_illness_accident_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"/>
+            <RadioButton
+                android:id="@+id/radio_illness_accident_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+        </RadioGroup>
+
+        <!-- Question e -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="e. Family history of diabetes, heart disease, mental illness, or cancer?"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+        <RadioGroup
+            android:id="@+id/radio_group_family_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_family_history_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"/>
+            <RadioButton
+                android:id="@+id/radio_family_history_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+        </RadioGroup>
+
+        <!-- Question f -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="f. Hazardous activities in occupation or pursuits?"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+        <RadioGroup
+            android:id="@+id/radio_group_hazardous_activities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_hazardous_activities_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"/>
+            <RadioButton
+                android:id="@+id/radio_hazardous_activities_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+        </RadioGroup>
+
+        <!-- Question g -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="g. Are you pregnant?"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+        <RadioGroup
+            android:id="@+id/radio_group_pregnant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_pregnant_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"/>
+            <RadioButton
+                android:id="@+id/radio_pregnant_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+        </RadioGroup>
+
+        <!-- Declaration and Consent -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="II. Declaration and Consent by Applicant"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Name -->
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Name"/>
+
+        <!-- ID/Passport -->
+        <EditText
+            android:id="@+id/edit_id_passport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="ID No./ Passport No."/>
+
+        <!-- Cell -->
+        <EditText
+            android:id="@+id/edit_cell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Cell"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email"/>
+
+        <!-- Declaration text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I have read and answered the health questions to the best of my knowledge and understood the declaration overleaf."
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+
+        <!-- Date -->
+        <EditText
+            android:id="@+id/edit_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:layout_marginTop="10dp"
+            android:hint="Date"/>
+
+
+
+
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit "
+            android:textColor="@color/white"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rounded_button"/>
+        <Button
+            android:id="@+id/btnClaim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Download Policy form"
+            android:textColor="@color/white"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/rounded_button"/>
+
+    </LinearLayout>
+</ScrollView>

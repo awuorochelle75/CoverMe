@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/mustard_yellow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/arrow_back_24"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Title TextView -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CIC Insurance Group"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/maroon"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Introduction TextView -->
+
+
+        <!-- CIC Academia Plan TextView -->
+        <TextView
+            android:id="@+id/academiaTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CIC Academia Plan"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CIC Academia plan is a combination of insurance protection and savings that allows you to prepare for the cost of your child's education. It is a suitable endowment policy for education of children at any age. The policy term can vary from 9 to 18 years. The plan is risk free and provides guaranteed returns in form of partial maturity and final maturity."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Product Description TextView -->
+        <TextView
+            android:id="@+id/productDescTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PRODUCT DESCRIPTION"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Table Layout for Benefits -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Full Term\nThe full term of this policy will range from a minimum of 9 to 18 years.\n\nPremium Term\nThe premium payment term will be for 5 to 14 years. The anticipated and maturity benefits commence after the premium payment and continue for a period of four years.\n\nDeath and Permanent Disability Benefit On the death or permanent disablement of the main policyholder CIC will;\nPay 50% of the sum assured immediately\nPay all accrued bonuses\nWaive all future premiums\nBeneficiary to receive full anticipated and maturity benefits when due.\n\nDeath of Child Beneficiary\nThe policy will give the main policyholder the option of receiving a refund of premiums paid or to nominate a different child beneficiary.\n\nANTICIPATED AND MATURITY BENEFITS The policy will provide anticipated and maturity benefits in the following manner.\nGuaranteed Partial Maturity\nCash benefits are payable based on the sum assured and policy term chosen by you at the beginning. The partial and maturity benefits commence after premium payment and continue for a period of three years.\nThe anticipated and maturity benefits are paid inclusive of accrued reversionary bonuses. The percentage factor applied to the sum assured is also applied to the reversionary bonuses at the Years of Maturity.\nBenefit Payable 15% of sum assured 15% of sum assured 15% of sum assured 15% of sum assured 45% of Sum Assured 105%"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:background="@color/white"
+            android:padding="8dp">
+
+            <!-- TableRows for Benefit details -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Years to Maturity"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Benefit Payable"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:background="@color/white" />
+            </TableRow>
+
+            <!-- Row 1 -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15% of sum assured"
+                    android:padding="4dp" />
+            </TableRow>
+
+            <!-- Row 2 -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15% of sum assured"
+                    android:padding="4dp" />
+            </TableRow>
+
+            <!-- Row 3 -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15% of sum assured"
+                    android:padding="4dp" />
+            </TableRow>
+
+            <!-- Row 4 -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15% of sum assured"
+                    android:padding="4dp" />
+            </TableRow>
+
+            <!-- Row 5 -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 (Maturity)"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="45% of sum assured"
+                    android:padding="4dp" />
+            </TableRow>
+
+            <!-- Total -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOTAL"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="105%"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:background="@color/white" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Other Options TextView -->
+        <TextView
+            android:id="@+id/otherOptionsTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OTHER OPTIONS"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cash surrender value and Loan benefit The policy can be surrendered after 3 years. A maximum loan of 85% of surrender value is available.\n\nPaid-Up policy values\nThe paid up value will be determined after the policy attaining surrender value, in which case no more premiums are payable and the company keeps the policy in force until maturity at an adjusted sum assured.\n\nTax relief benefit The government has given a relief of 15% of monthly premium or Ksh 5,000 whichever is less to all policy holders. This is a saving on taxable income.\n\nWho is eligible? Individuals of a minimum age of 18 years to a maximum of 55 years.\n\nHow do I pay premium? Premiums are payable throughout the premium term unless premature death occurs. Premiums are payable annually, half yearly, quarterly and monthly."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

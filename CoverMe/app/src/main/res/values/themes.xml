@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CoverMe" parent="Theme.AppCompat.DayNight.NoActionBar">
+         <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+<!--for the nightmode -->
+    <style name="Theme.CoverMe" parent="Base.Theme.CoverMe" />
+    <style name = "nightModeSwitch" parent="Theme.AppCompat.Light">
+        <item name ="colorControlActivated"> @color/night_mode</item>
+        <item name ="colorSwitchThumbNormal">#FFFFFFFF</item>
+
+
+    </style>
+
+    <style name = "PrivateAccountSwitch" parent="Theme.AppCompat.Light">
+    <item name ="colorControlActivated">@color/privacy_account</item>
+        <item name ="colorSwitchThumbNormal">#FFFFFFFF</item>
+    </style>
+
+</resources>

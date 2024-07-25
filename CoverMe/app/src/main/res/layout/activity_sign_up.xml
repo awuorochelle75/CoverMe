@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/motherchild">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Sign Up Title -->
+        <TextView
+            android:id="@+id/tv_signup_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Surname -->
+        <EditText
+            android:id="@+id/et_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="Surname"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- First Name/Middle Name -->
+        <EditText
+            android:id="@+id/et_first_middle_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="First Name/Middle Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Contact Information -->
+        <TextView
+            android:id="@+id/tv_contact_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Information"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Country Code Spinner -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <Spinner
+                android:id="@+id/spinner_country_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/et_phone_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- Login Information -->
+        <TextView
+            android:id="@+id/tv_login_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login Information"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/et_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Additional Information -->
+        <TextView
+            android:id="@+id/tv_additional_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Additional Information"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/et_date_of_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Date of Birth"
+            android:inputType="date"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Gender -->
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RadioGroup>
+
+        <!-- Marital Status -->
+        <TextView
+            android:id="@+id/tv_marital_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marital Status"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_marital_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Employment Status -->
+        <TextView
+            android:id="@+id/tv_employment_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employment Status"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_employment_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Upload ID -->
+        <TextView
+            android:id="@+id/tv_upload_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload ID"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/btn_upload_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload ID"
+            android:layout_marginBottom="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Upload Passport Photo -->
+        <TextView
+            android:id="@+id/tv_upload_passport_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Passport Photo"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/btn_upload_passport_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Passport Photo"
+            android:layout_marginBottom="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Upload KRA PIN Document -->
+        <TextView
+            android:id="@+id/tv_upload_kra_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload KRA PIN Document (PDF only)"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/btn_upload_kra_pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload KRA PIN"
+            android:layout_marginBottom="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Bank Account Details -->
+        <TextView
+            android:id="@+id/tv_bank_account_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Account Details"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/et_bank_account_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="Bank Account Details"
+            android:inputType="text"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Upload ATM Card -->
+        <TextView
+            android:id="@+id/tv_upload_atm_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload ATM Card"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/btn_upload_atm_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload ATM Card"
+            android:layout_marginBottom="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Agree to Terms -->
+        <CheckBox
+            android:id="@+id/checkbox_agree_to_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:minHeight="48dp"
+            android:text="I agree to the terms and conditions"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Create Account Button -->
+        <Button
+            android:id="@+id/btn_create_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:background="@drawable/rounded_button"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Already have an account? Log In -->
+        <TextView
+            android:id="@+id/tv_already_have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Login"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- ProgressBar for registration process -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/faqs_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frequently Asked Questions"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/maroon"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/question1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q: What types of insurance policies do you offer?"
+        android:layout_below="@id/faqs_text"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/maroon"/>
+
+    <TextView
+        android:id="@+id/answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A: We offer a range of insurance policies including life insurance, health insurance, auto insurance, home insurance, and more. Each policy is designed to meet specific needs and provide coverage in different areas."
+        android:layout_below="@id/question1"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/question2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q: How can I file a claim?"
+        android:layout_below="@id/answer1"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/maroon"/>
+
+    <TextView
+        android:id="@+id/answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A: You can file a claim by contacting our customer service department or through our online portal. We will guide you through the process and assist you with any documentation required to complete your claim."
+        android:layout_below="@id/question2"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/question3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q: What factors affect insurance premiums?"
+        android:layout_below="@id/answer2"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/maroon"/>
+
+    <TextView
+        android:id="@+id/answer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A: Insurance premiums are influenced by various factors such as age, gender, location, driving record (for auto insurance), health status (for health insurance), coverage limits, deductibles, and the type of insurance policy."
+        android:layout_below="@id/question3"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/question4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q: Can I cancel my insurance policy?"
+        android:layout_below="@id/answer3"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/maroon"/>
+
+    <TextView
+        android:id="@+id/answer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A: Yes, you can cancel your insurance policy at any time. However, there may be penalties or fees associated with early cancellation, and you may lose coverage benefits. It's important to review the terms and conditions of your policy before canceling."
+        android:layout_below="@id/question4"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/question5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q: What does my insurance policy cover?"
+        android:layout_below="@id/answer4"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/maroon"/>
+
+    <TextView
+        android:id="@+id/answer5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A: The coverage provided by your insurance policy depends on the type of policy you have and the specific terms outlined in your policy documents. Common coverage includes property damage, bodily injury liability, medical expenses, and personal property protection."
+        android:layout_below="@id/question5"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/question6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q: How are insurance claims processed?"
+        android:layout_below="@id/answer5"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/maroon"/>
+
+    <TextView
+        android:id="@+id/answer6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A: Insurance claims are processed by submitting a claim form along with any supporting documentation (such as police reports, medical bills, or repair estimates) to your insurance provider. The provider will review the claim and determine coverage eligibility based on the terms of your policy."
+        android:layout_below="@id/question6"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/question7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q: Can I change my coverage limits?"
+        android:layout_below="@id/answer6"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/maroon" />
+
+    <TextView
+        android:id="@+id/answer7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A: Yes, you can change your coverage limits. However, any changes to your coverage may affect your insurance premiums. It's important to consult with your insurance provider to understand how adjusting your coverage limits will impact your policy."
+        android:layout_below="@id/question7"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/question8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q: What is a deductible?"
+        android:layout_below="@id/answer7"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/maroon"/>
+
+    <TextView
+        android:id="@+id/answer8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A: A deductible is the amount of money you are required to pay out-of-pocket before your insurance coverage kicks in. For example, if you have a $500 deductible on your auto insurance policy and you file a claim for $2,000 in damages, you would pay $500 and your insurance company would cover the remaining $1,500."
+        android:layout_below="@id/question8"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/question9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q: How can I lower my insurance premiums?"
+        android:layout_below="@id/answer8"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/maroon"/>
+
+    <TextView
+        android:id="@+id/answer9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A: You can lower your insurance premiums by maintaining a clean driving record (for auto insurance), improving your credit score (for all types of insurance), bundling multiple policies with the same provider, increasing your deductibles, and taking advantage of discounts offered by your insurance company."
+        android:layout_below="@id/question9"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/question10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q: What happens if I miss a premium payment?"
+        android:layout_below="@id/answer9"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/maroon"/>
+
+    <TextView
+        android:id="@+id/answer10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A: If you miss a premium payment, your insurance policy may lapse, meaning you will lose coverage. However, many insurance companies offer a grace period during which you can still make a payment to keep your policy active. It's important to contact your insurance provider as soon as possible if you are unable to make a payment to discuss your options."
+        android:layout_below="@id/question10"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<!-- res/layout/activity_continue.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cicbgrnd"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvContinueAs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login as:"
+        android:textColor="@color/maroon"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbGuest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:minHeight="48dp"
+            android:text="User"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:minHeight="48dp"
+            android:text="Admin"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:onClick="onContinueClicked"
+        android:background="@drawable/rounded_button" />
+
+</LinearLayout>
